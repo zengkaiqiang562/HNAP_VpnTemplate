@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:supportsRtl="true"
+        tools:targetApi="31"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        android:resizeableActivity="false">
+
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:noHistory="true"/>
+
+
+        <!-- Firebase 的 Crashlytics 启用自选式报告 -->
+        <!-- 参考：https://firebase.google.com/docs/crashlytics/customize-crash-reports?authuser=0&platform=android#enable-reporting -->
+        <!-- 此时，当代码中调用 FirebaseCrashlytics.getInstance().setCrashlyticsCollectionEnabled(true); 时才会启动崩溃分析  -->
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+
+    </application>
+
+</manifest>
