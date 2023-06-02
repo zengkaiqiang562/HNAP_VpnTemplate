@@ -1,1 +1,1 @@
-# GameBoostProxy
+# VpnTemplate
