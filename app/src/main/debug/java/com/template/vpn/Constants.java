@@ -20,12 +20,12 @@ public interface Constants {
     /**
      * VPN list API
      */
-    String PATH_GAME_NODES = LibConfig.PATH_GAME_NODES;
+    String PATH_GAME_NODES = LibConfig.PATH_VPN_NODE_LIST;
 
     /**
      * VPN Conn Status API
      */
-    String PATH_REPORT_NODE = LibConfig.PATH_REPORT_NODE;
+    String PATH_REPORT_NODE = LibConfig.PATH_VPN_NODE_INFO;
 
 
     String LOCATION_URL_1ST = LibConfig.PATH_LOCATION_1;

@@ -23,16 +23,14 @@ android {
 
         buildConfigField("String", "BASE_URL", "\"${deployExt.baseUrl}\"")
         buildConfigField("String", "PATH_CONFIG", "\"${deployExt.pathConfig}\"")
-        buildConfigField("String", "PATH_GAME_NODES", "\"${deployExt.pathVpnNodeList}\"")
-        buildConfigField("String", "PATH_REPORT_NODE", "\"${deployExt.pathVpnNodeInfo}\"")
+        buildConfigField("String", "PATH_VPN_NODE_LIST", "\"${deployExt.pathVpnNodeList}\"")
+        buildConfigField("String", "PATH_VPN_NODE_INFO", "\"${deployExt.pathVpnNodeInfo}\"")
 
         buildConfigField("String", "PATH_LOCATION_1", "\"${deployExt.pathLocation1}\"")
         buildConfigField("String", "PATH_LOCATION_2", "\"${deployExt.pathLocation2}\"")
         buildConfigField("String", "PATH_LOCATION_3", "\"${deployExt.pathLocation3}\"")
         buildConfigField("String", "PATH_LOCATION_4", "\"${deployExt.pathLocation4}\"")
 
-//        manifestPlaceholders["fbId"] = "222222222222222"
-//        manifestPlaceholders["fbToken"] = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
         resValue("string", "facebook_id", deployExt.facebookId)
         resValue("string", "facebook_token", deployExt.facebookToken)
         resValue("string", "adjust_token", deployExt.adjustToken)
@@ -41,10 +39,6 @@ android {
         buildConfigField("String", "FACEBOOK_ID", "\"${deployExt.facebookId}\"")
         buildConfigField("String", "FACEBOOK_TOKEN", "\"${deployExt.facebookToken}\"")
         buildConfigField("String", "ADJUST_TOKEN", "\"${deployExt.adjustToken}\"")
-
-        println("sign=${deployExt.sign}")
-        println("localConfig=${deployExt.localConfig}")
-        println("vpnCert=${deployExt.vpnCert}")
     }
 
     buildTypes {

@@ -11,8 +11,8 @@ public final class LibConfig {
 
     public static final String BASE_URL = BuildConfig.BASE_URL;
     public static final String PATH_CONFIG = BuildConfig.PATH_CONFIG;
-    public static final String PATH_GAME_NODES = BuildConfig.PATH_GAME_NODES;
-    public static final String PATH_REPORT_NODE = BuildConfig.PATH_REPORT_NODE;
+    public static final String PATH_VPN_NODE_LIST = BuildConfig.PATH_VPN_NODE_LIST;
+    public static final String PATH_VPN_NODE_INFO = BuildConfig.PATH_VPN_NODE_INFO;
 
     public static final String PATH_LOCATION_1 = BuildConfig.PATH_LOCATION_1;
     public static final String PATH_LOCATION_2 = BuildConfig.PATH_LOCATION_2;
